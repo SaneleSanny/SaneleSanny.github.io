@@ -1,0 +1,308 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Softer background */
+    color: #444; /* Darker text for better contrast */
+    line-height: 1.7; /* Increased line height for readability */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+/* Header */
+header {
+    background-color: #2a2a2a; /* Darker header for contrast */
+    color: #ffffff;
+    padding: 15px 0; /* Reduced padding for a sleeker look */
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure header is on top */
+}
+
+.sticky {
+    position: fixed; /* Make header fixed */
+    top: 0; /* Align to the top of the viewport */
+    width: 100%; /* Full width */
+}
+
+/* Header Links */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px; /* Increased margin for better spacing */
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600; /* Bolder weight for better visibility */
+    font-size: 1.1rem;
+    position: relative; /* Positioning for hover effect */
+    padding: 10px 15px; /* Add padding for a larger clickable area */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Underline effect */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #ff6347; /* Color for the underline */
+    width: 0;
+    transition: width 0.3s ease; /* Smooth underline effect */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the underline */
+}
+
+/* Hover effect for text color and underline */
+header nav ul li a:hover {
+    color: #ff6347; /* Change text color on hover */
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px; /* Add some padding */
+    border-bottom: 5px solid #ff6347; /* Border for added depth */
+}
+
+.hero h2 {
+    font-size: 3.8rem; /* Increased font size for impact */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Slightly larger font for better readability */
+    margin-bottom: 20px;
+    max-width: 600px; /* Limit width for long text */
+}
+
+.hero .btn {
+    padding: 12px 24px; /* Slightly larger buttons */
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem; /* Slightly larger font for buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Button hover effect */
+.hero .btn:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px; /* Increased section padding for breathing room */
+    max-width: 1200px; /* Max width for better readability */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 20px; /* Adjusted padding for the section */
+}
+
+.projects h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 40px; /* Add space below the title */
+    font-size: 2.5rem; /* Adjust font size as needed */
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Minimum size for cards */
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.7rem; /* Increased card heading size */
+    color: #333; /* Darker color for headings */
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 1.1rem; /* Slightly larger font */
+    color: #555; /* Softer color for card text */
+    line-height: 1.6; /* Improved line height */
+}
+
+.card a {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font for links */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.card a:hover {
+    background-color: #ff4500;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; 
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    text-align: center;
+    list-style: none;
+}
+
+.contact ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact ul li a:hover {
+    color: #ff6347; /* Color change on hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styles */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a; /* Dark footer for contrast */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Scroll Progress Bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #ff6347;
+    width: 0;
+    transition: width 0.2s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .hero h2 {
+        font-size: 2.8rem; /* Adjusted for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.1rem; /* Adjusted for smaller screens */
+    }
+
+    .projects h2 {
+        font-size: 2rem; /* Adjusted heading size for smaller screens */
+    }
+
+    .card {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+}
