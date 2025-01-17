@@ -8,81 +8,157 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script defer src="script.js"></script> <!-- Defer script loading -->
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Scroll Progress Bar -->
-    <div id="progress-bar" aria-label="Scroll Progress"></div>
-
-    <header class="sticky">
-        <div class="container">
-            <h1>Sanele Sanny</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Skeleton Loader -->
+    <div id="skeleton-loader">
+        <div class="skeleton-header"></div>
+        <div class="skeleton-content">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <section id="hero" class="hero" aria-labelledby="hero-heading">
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Scroll Progress Bar -->
+        <div id="progress-bar" aria-label="Scroll Progress"></div>
+
+        <header class="sticky">
             <div class="container">
-                <h2 id="hero-heading" class="slide-in-left">About Me</h2>
-                <p>Hi! I’m Sanele Sanny, a passionate web developer and tech enthusiast specializing in web development and AI-driven solutions. Currently honing my skills in JavaScript, Python, and machine learning.</p>
-                <a href="#projects" class="btn pulse" role="button" aria-label="See my projects">See My Work</a>
+                <h1>Sanele Sanny</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </header>
 
-        <section id="projects" class="section projects" aria-labelledby="projects-heading">
-            <div class="container">
-                <h2 id="projects-heading" class="slide-in-right">Projects</h2>
-                <div class="grid fade-in">
-                    <article class="card hover-3d" onclick="openModal(1)" role="button" tabindex="0" aria-label="View Project 1 details">
-                        <h3>Project 1</h3>
-                        <p>A web application that solves problem X.</p>
-                        <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </article>
-                    <article class="card hover-3d" onclick="openModal(2)" role="button" tabindex="0" aria-label="View Project 2 details">
-                        <h3>Project 2</h3>
-                        <p>An AI tool that enhances productivity.</p>
-                        <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </article>
-                    <article class="card hover-3d" onclick="openModal(3)" role="button" tabindex="0" aria-label="View Project 3 details">
-                        <h3>Project 3</h3>
-                        <p>A mobile app that connects users in real-time.</p>
-                        <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-                    </article>
+        <main>
+            <section id="profile" class="section profile" aria-labelledby="profile-heading">
+                <div class="container">
+                    <h2 id="profile-heading" class="slide-in-right">Profile</h2>
+                    <img src="Images & Icons/My Profile.jpg" alt="Sanele Sanny" class="profile-photo">
+                    <p class="fade-in">Welcome to my portfolio! I am a dedicated Computer Science student with a passion for creating innovative solutions. I enjoy working with modern technologies and continuously improving my skills.</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Project Modal -->
-        <div id="projectModal" class="modal" aria-labelledby="modal-title" aria-hidden="true">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
-                <div id="modal-body"></div>
-            </div>
-        </div>
+            <section id="skills" class="section skills" aria-labelledby="skills-heading">
+                <div class="container">
+                    <h2 id="skills-heading" class="slide-in-right">Skills</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <img src="Images & Icons/C++.png" alt="C++ Logo" class="skill-logo">
+                            <span>C++</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/HTML-5.png" alt="HTML Logo" class="skill-logo">
+                            <span>HTML</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/CSS.png" alt="CSS Logo" class="skill-logo">
+                            <span>CSS</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/Js.png" alt="JavaScript Logo" class="skill-logo">
+                            <span>JavaScript</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/Java.png" alt="Java Logo" class="skill-logo">
+                            <span>Java</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/VB.png" alt="VB.Net Logo" class="skill-logo">
+                            <span>Visual Basic.Net</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/SQL.png" alt="SQL Logo" class="skill-logo">
+                            <span>SQL</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/Asp.png" alt="ASP.Net Logo" class="skill-logo">
+                            <span>ASP.Net</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/C sharp.png" alt="C# Logo" class="skill-logo">
+                            <span>C#</span>
+                        </li>
+                        <li>
+                            <img src="Images & Icons/Github.png" alt="Git Logo" class="skill-logo">
+                            <span>Git & GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="contact" class="section contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading" class="slide-in-left">Contact</h2>
-                <p class="fade-in">Want to work together or have a question? Feel free to reach out!</p>
-                <ul class="fade-in">
-                    <li>Email: <a href="mailto:phezasanele25@gmail.com" aria-label="Email Me">phezasanele25@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/sanele-pheza-91672624b/" target="_blank" aria-label="View LinkedIn profile" rel="noopener noreferrer">linkedin.com/in/sanelepheza</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+            <section id="hero" class="hero" aria-labelledby="hero-heading">
+                <div class="container">
+                    <h2 id="hero-heading" class="slide-in-left">About Me</h2>
+                    <p>Hi! I’m Sanele Sanny, a passionate web developer and tech enthusiast specializing in web development and AI-driven solutions. Currently honing my skills in JavaScript, Python, and machine learning.</p>
+                    <a href="#projects" class="btn pulse" role="button" aria-label="See my projects">See My Work</a>
+                </div>
+            </section>
 
-    <footer class="fade-in">
-        <p>&copy; 2024 Sanele Sanny. All Rights Reserved.</p>
-    </footer>
+            <section id="projects" class="section projects" aria-labelledby="projects-heading">
+                <div class="container">
+                    <h2 id="projects-heading" class="slide-in-right">Projects</h2>
+                    <div class="grid fade-in">
+                        <article class="card hover-3d" onclick="openModal(1)" role="button" tabindex="0" aria-label="View Project 1 details">
+                            <h3>Project 1</h3>
+                            <p>A web application that solves problem X.</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </article>
+                        <article class="card hover-3d" onclick="openModal(2)" role="button" tabindex="0" aria-label="View Project 2 details">
+                            <h3>Project 2</h3>
+                            <p>An AI tool that enhances productivity.</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </article>
+                        <article class="card hover-3d" onclick="openModal(3)" role="button" tabindex="0" aria-label="View Project 3 details">
+                            <h3>Project 3</h3>
+                            <p>A mobile app that connects users in real-time.</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-heading">
+                <div class="container">
+                    <h2 id="testimonials-heading" class="slide-in-left">Testimonials</h2>
+                    <blockquote>
+                        <p>"Sanele is a dedicated developer who consistently delivers high-quality work." - Colleague</p>
+                    </blockquote>
+                    <blockquote>
+                        <p>"His ability to solve complex problems is impressive." - Mentor</p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact" aria-labelledby="contact-heading">
+                <div class="container">
+                    <h2 id="contact-heading" class="slide-in-left">Contact</h2>
+                    <p class="fade-in">Want to work together or have a question? Feel free to reach out!</p>
+                    <ul class="fade-in">
+                        <p>Email: <a href="mailto:phezasanele25@gmail.com" aria-label="Email Me">phezasanele25@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/sanele-pheza-91672624b/" target="_blank" aria-label="View LinkedIn profile" rel="noopener noreferrer">linkedin.com/in/sanelepheza</a></p>
+                        <p>GitHub: <a href="https://github.com/SaneleSanny" target="_blank" aria-label="View GitHub profile" rel="noopener noreferrer">github.com/SaneleSanny</a></p>                       
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="fade-in">
+            <p>&copy; 2024 Sanele Sanny. All Rights Reserved.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
