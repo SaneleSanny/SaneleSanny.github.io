@@ -1,4 +1,3 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -429,5 +428,127 @@ footer p {
     }
     100% {
         transform: translateX(100%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile h2,
+    .hero h2,
+    .about-me h2,
+    .projects h2,
+    .contact h2,
+    .skills h2,
+    .testimonials h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p,
+    .about-me p,
+    .projects p,
+    .contact p,
+    .skills p,
+    .testimonials p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .card h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hero h2,
+    .about-me h2,
+    .projects h2,
+    .contact h2,
+    .skills h2,
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .profile h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p,
+    .about-me p,
+    .projects p,
+    .contact p,
+    .skills p,
+    .testimonials p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 0.8rem;
+    }
+
+    .contact button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
