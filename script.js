@@ -50,3 +50,8 @@ window.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
+window.addEventListener('load', function() {
+    document.getElementById('skeleton-loader').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+});
